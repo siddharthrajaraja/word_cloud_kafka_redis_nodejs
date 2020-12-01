@@ -14,3 +14,6 @@ You can check out the system design here [WordCloudSystemDesign](/systemDesign.p
 - RedisDB
 - HTML5 + CSS3 + Javascript
 
+# APIs:
+
+- To know about the REST-APIs functionality check out [apis.md](/apis.md)
