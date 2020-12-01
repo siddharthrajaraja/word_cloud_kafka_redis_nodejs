@@ -7,9 +7,13 @@
 
 You can check out the system design here [WordCloudSystemDesign](/systemDesign.pdf)
 
+# Logic Flow
+
+You can see the present Logical Flow of the System here [LogicWordCloud](/logicWordCloud.pdf)
+
 # Tech-Stack :
 
-- Node-js (Express framework) + Python Scripting Language
+- Node-js (Express framework)
 - Apache Kafka
 - RedisDB
 - HTML5 + CSS3 + Javascript
