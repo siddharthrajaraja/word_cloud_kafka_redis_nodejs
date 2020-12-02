@@ -4,10 +4,18 @@ const dotenv=require('dotenv').config()
 const morgan =require('morgan')
 const jsonParser=require('body-parser').json()
 
-
+app.set('view engine','ejs')
 
 app.use(morgan('combined'))
 app.use(jsonParser)
+
+app.use(
+    '/assets',
+    express.static('assets', {
+      maxAge: 5000,
+    })
+);
+  
 
 require('../config/kafkaConfig.js')
 require('../routes')(app,jsonParser)

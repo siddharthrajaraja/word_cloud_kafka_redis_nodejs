@@ -5,7 +5,7 @@ var getRequest = async ()=>{
     try {
         data = await axios.get("http://localhost:9210/")
         global_array = [...global_array,...data.data]
-
+        
         series.data = global_array
         series.dataFields.word = "tag"
         series.dataFields.value = "weight"
