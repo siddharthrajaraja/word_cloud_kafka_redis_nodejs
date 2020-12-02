@@ -3,7 +3,8 @@ var chart = am4core.create('container',am4plugins_wordCloud.WordCloud)
 var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries())
 var getRequest = async ()=>{
     try {
-        data = await axios.get("http://localhost:9210/")
+        data = await axios.get("http://localhost:8000/getAllWords")
+        
         global_array = [...global_array,...data.data]
         
         series.data = global_array
