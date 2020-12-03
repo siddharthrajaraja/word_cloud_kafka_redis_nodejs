@@ -3,11 +3,9 @@ var chart = am4core.create('container',am4plugins_wordCloud.WordCloud)
 var series = chart.series.push(new am4plugins_wordCloud.WordCloudSeries())
 var getRequest = async ()=>{
     try {
-        data = await axios.get("http://localhost:8000/getAllWords")
+        data = await axios.get("/api/getAllWords")
         
-        global_array = [...global_array,...data.data]
-        
-        series.data = global_array
+        series.data = data.data
         series.dataFields.word = "tag"
         series.dataFields.value = "weight"
         series.colors = new am4core.ColorSet();
