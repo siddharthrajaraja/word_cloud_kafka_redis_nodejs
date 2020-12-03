@@ -8,6 +8,6 @@
 
 ![Click to view Redis-Cli Response](./output/redis_storage.PNG)
 
-## Final Cloud 🥰 ☁️
+## Final Word Cloud 🥰 ☁️
 
 ![Click to view Redis-Cli Response](./output/wordCloud.PNG)
