@@ -5,19 +5,21 @@ var getRequest = async ()=>{
     try {
         data = await axios.get("/api/getAllWords")
         
-        series.data = data.data
+        var {data}=data.data
+        var values=data
+        series.data = values
         series.dataFields.word = "tag"
         series.dataFields.value = "weight"
         series.colors = new am4core.ColorSet();
         series.colors.passOptions = {};
         series.colors.resuse = true;
-        series.randomness = 0.1
-        console.error("Refreshed!!")
+        series.randomness = 0.0025
+        //console.error("Refreshed!!")
     } catch (error) {
         console.error(error)
     }
     
 }
-setInterval(getRequest(),5000)
+getRequest();
 
 
