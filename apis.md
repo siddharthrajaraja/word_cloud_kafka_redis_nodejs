@@ -10,6 +10,10 @@ The project comprises of categorical REST-API(s) interacting with Kafka and Redi
 
     - _functionality :_ This API consume the messages stored in the _Kafka Topic_ and connects to the external API(s) / UI.
 
+  * `/api/getAllWords` :
+
+    - _functionality :_ This API refreshes JSON file present in `assets folder` which is read in the front-end in a cron-job.
+
 - POST API(s):
 
   - `/producer` :
